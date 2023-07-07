@@ -1,20 +1,13 @@
 <template>
-  <div class="box">
-    <h1>Hello Vue</h1>
+  <div>
+    <el-button type="primary" size="default" :icon="Share">Click!</el-button>
+    <el-button type="success" size="medium" :icon="Edit"></el-button>
+    <el-pagination layout="total, sizes, prev, pager, next, jumper" :total="400" />
   </div>
 </template>
 
 <script setup lang="ts">
-let a = 1
+import { Share, Edit } from '@element-plus/icons-vue'
 </script>
 
-<style scoped lang="scss">
-.box {
-  width: 300px;
-  height: 200px;
-  background: lavender;
-  h {
-    color: #333;
-  }
-}
-</style>
+<style scoped></style>
